@@ -5,18 +5,19 @@ public class Main {
         Fijo.setValor(20);
 
  DescuentoPorcentual porcentual = new DescuentoPorcentual();
-        porcentual.setValor(0.4f);
+        porcentual.setValor(0.30f);
+
+
 
 // Se creo un carrito
 Carrito carrito = new Carrito();
 
-Persona persona = new Persona();
+Persona persona1 = new Persona();
 //persona.setDocumento(44308904);
 //persona.setEdad(20);
-persona.setNombre("Wailor");
-carrito.setPersona(persona);
-
-System.out.println("Ustede es:" + persona.getNombre());
+persona1.setNombre("Wailor");
+carrito.setPersona(persona1);
+System.out.println("El carrito pertenece a:"+ persona1.getNombre());
 
 //Se creo un producto para carrito
 Producto producto = new Producto();
@@ -46,10 +47,7 @@ carrito.setProducto3(productoT);
 
 System.out.println("-" + productoT.getNombre() + " " + "$" + productoT.getPrecio());
 
-carrito.setDescuento(Fijo);
-System.out.println("Su descuento es:" + carrito.obtenerCostoFinal());
-
-
-
+carrito.setDescuento(porcentual);
+System.out.println("Total a pagar:" + carrito.obtenerCostoFinal());
 }
 }
