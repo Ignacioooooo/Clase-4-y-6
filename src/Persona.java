@@ -2,8 +2,8 @@ import java.security.PublicKey;
 
 public class Persona {
     private String nombre;
-    private int edad;
-    private int documento;
+    //private int edad;
+    //private int documento;
 
     public String getNombre() {
         return nombre;
@@ -13,26 +13,20 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
+   // public int getEdad() {
+       // return edad;
+   // }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
+   // public void setEdad(int edad) {
+     //   this.edad = edad;
+   // }
 
-    public int getDocumento() {
-        return documento;
-    }
+   // public int getDocumento() {
+       // return documento;
+   // }
 
-    public void setDocumento(int documento) {
-        this.documento = documento;
-    }
+    //public void setDocumento(int documento) {
+        //this.documento = documento;
+    //}
 
-    public void NuevoCarrito() {
-
-        Carrito carrito=new Carrito();
-        carrito.setCantidadProductos(3);
-
-    }
 }
