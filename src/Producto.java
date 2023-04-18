@@ -2,6 +2,15 @@ public class Producto {
   private String nombre;
     private double precio;
     private float peso;
+    private Integer stock;
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
+
 
 
     public String getNombre() {
@@ -12,7 +21,10 @@ public class Producto {
        this.nombre=nombre;
     }
 
-    public double getPrecio() {
+    public double getPrecio() throws NohayStockException{
+        if(stock == 0){
+            throw new NohayStockException(this);
+        }
         return precio;
     }
 

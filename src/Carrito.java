@@ -1,4 +1,7 @@
+import java.util.List;
+
 public class Carrito {
+
     private Persona persona;
     public Persona getPersona() {
         return persona;
@@ -7,7 +10,7 @@ public class Carrito {
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
-    private Producto producto1;
+   private Producto producto1;
     public Producto getProducto1() {
         return producto1;
     }
@@ -40,7 +43,7 @@ public class Carrito {
         this.descuento = descuento;
     }
 
-public float obtenerCostoFinal(){
+public float obtenerCostoFinal() throws NohayStockException, CarritoCeroNoSeAplica, Descuentonegativo{
 
     float Original = 0;
     if(producto1 != null){
@@ -51,8 +54,16 @@ public float obtenerCostoFinal(){
 
     if(producto3 != null){
         Original+= producto3.getPrecio();}
+
+    if(Original == 0){
+throw new CarritoCeroNoSeAplica();
+    }
+
+    if( Original - descuento.obtenerDescuento(Original) < 0){
+        throw new Descuentonegativo();
+    }
+
     //return base;
   return Original - descuento.obtenerDescuento(Original);
 }
-
 }
