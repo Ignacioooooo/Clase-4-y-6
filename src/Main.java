@@ -1,5 +1,6 @@
 import java.sql.SQLOutput;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Main {
     public static void main(String[] args) throws NohayStockException{
 
@@ -9,31 +10,33 @@ public class Main {
  DescuentoPorcentual porcentual = new DescuentoPorcentual();
         porcentual.setValor(0.7f);
 
+        DescuentoConTope tope = new DescuentoConTope();
+        tope.setValor(200);
 
 
 // Se creo un carrito
 Carrito carrito = new Carrito();
 
 Persona persona1 = new Persona();
-//persona.setDocumento(44308904);
-//persona.setEdad(20);
+persona1.setDocumento(44308904);
+persona1.setEdad(20);
 persona1.setNombre("Wailor");
 carrito.setPersona(persona1);
-System.out.println("El carrito pertenece a:"+ persona1.getNombre());
+System.out.println("El carrito pertenece a:"+ carrito.toString());
 
 //Se creo un producto para carrito
-Producto producto = new Producto();
+Producto producto1 = new Producto();
 
 System.out.println("Su carrito contiene:");
 
-producto.setPeso(100);
-producto.setNombre("Galletas");
-producto.setPrecio(3000.20);
-producto.setStock(4);
-carrito.setProducto2(producto);
+producto1.setPeso(100);
+producto1.setNombre("Galletas");
+producto1.setPrecio(3000.20);
+producto1.setStock(4);
+carrito.agregarProductos(producto1);
 
 try{
-System.out.println("-" + producto.getNombre()+" " + "$" + producto.getPrecio());
+System.out.println("-" + carrito.getProductos()+" " + "$" + producto1.getPrecio());
 }
 catch ( NohayStockException e){
     System.out.println("No hay stock de al menos un producto");
@@ -54,8 +57,8 @@ productoT.setPrecio(270);
 carrito.setProducto3(productoT);
 
 System.out.println("-" + productoT.getNombre() + " " + "$" + productoT.getPrecio());*/
-
-carrito.setDescuento(porcentual);
+carrito.setDescuento(tope);
+//carrito.setDescuento(porcentual);
 try{
 System.out.println("Total a pagar:" + carrito.obtenerCostoFinal());
 }

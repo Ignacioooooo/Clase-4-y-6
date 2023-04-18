@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="960fb87b-4cc6-4fc5-8ae2-9e1147519f20" name="Changes" comment="TP terminado sin revisión">
-      <change afterPath="$PROJECT_DIR$/src/CarritoCeroNoSeAplica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Descuentonegativo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NohayStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DescuentoCero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DescuentoConTope.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Carrito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Carrito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Ignac/Desktop/JavaPractice/Clase 4-"
+    "last_opened_file_path": "C:/Users/Ignac/Desktop/JavaPractice/Clase4y6Arreglado"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681493738920</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TP terminado sin revisión">
+      <created>1681777527619</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681777527619</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
