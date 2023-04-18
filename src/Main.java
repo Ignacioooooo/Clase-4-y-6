@@ -36,7 +36,7 @@ producto1.setStock(4);
 carrito.agregarProductos(producto1);
 
 try{
-System.out.println("-" + carrito.getProductos()+" " + "$" + producto1.getPrecio());
+System.out.println("-" + carrito.getProductos().toString() +" " + "$" + producto1.getPrecio());
 }
 catch ( NohayStockException e){
     System.out.println("No hay stock de al menos un producto");

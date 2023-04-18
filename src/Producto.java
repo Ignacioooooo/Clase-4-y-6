@@ -40,4 +40,7 @@ public class Producto {
         this.peso = peso;
     }
 
+    public String toString(){
+        return nombre;
+    }
 }
